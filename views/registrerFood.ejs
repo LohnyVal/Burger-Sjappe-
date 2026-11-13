@@ -1,0 +1,23 @@
+<%- include("./partials/head.ejs") %>
+<body>
+    <%- include("./partials/nav.ejs") %>
+    <h1>Regsitrer your burgers here</h1>
+
+    <form action="" method="post">
+        <label for="">Bilde url</label>
+        <input type="text" name="imageurl">
+        <label for="">Titel:</label>
+        <input type="text" name="title" placeholder="title">
+        <label for="">Description</label>
+        <input type="text" name="beskrivelse" placeholder="description">
+        <label for="">Ingrediens</label>
+        <input type="text" name="ingrediens" placeholder="ingrediens">
+        <label for="">Category</label>
+        <input type="text" name="category" placeholder="category">
+        <label for="">Price</label>
+        <input type="number" name="price" placeholder="price">
+        <button>Submit</button>
+        <a href="/">Home</a>
+    </form>
+</body>
+</html>

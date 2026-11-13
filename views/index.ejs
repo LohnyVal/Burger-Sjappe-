@@ -1,0 +1,21 @@
+<%- include("./partials/head.ejs") %>
+<body>
+    <%- include("./partials/nav.ejs") %>
+    <h1>Free burgers</h1>
+    <div class="burgers">
+        <div class="f">
+            <% burger.forEach(function(b) { %> 
+              <div class="cards">
+                  <img src="<%= b.imageurl %>" alt="">
+                  <h3><%= b.title %></h3>
+                  <p><%= b.description %></p>
+                  <p><%= b.ingridiens %></p>
+                  <p><%= b.category %></p>
+                  <p><%= b.price %></p>
+                  <button>Buy</button>
+                    <% }); %>
+              </div>
+        </div>
+    </div
+</body>
+</html>
